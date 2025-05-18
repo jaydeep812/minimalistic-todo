@@ -29,7 +29,7 @@ function TodoDashboard() {
   }
 
   async function deleteTodo(todoId) {
-  const res = await axios.delete('http://localhost:3000/deleteTodo', {
+  const res = await axios.delete('https://minimalistic-todo-production.up.railway.app/deleteTodo', {
     headers: {
       Authorization: 'Bearer ' + token,
       'Content-Type': 'application/json',
@@ -42,7 +42,7 @@ function TodoDashboard() {
   }
 }
   useEffect(()=>{
-   axios.get('http://localhost:3000/todos',{
+   axios.get('https://minimalistic-todo-production.up.railway.app/todos',{
       headers:{
         Authorization : 'Bearer '+ token
       }

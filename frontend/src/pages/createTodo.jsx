@@ -27,7 +27,7 @@ export default function CreateTodo(){
             </div>
             <div className="flex justify-center">
                 <button onClick={async()=>{
-                    const response = await axios.post('http://localhost:3000/createTodo',{
+                    const response = await axios.post('https://minimalistic-todo-production.up.railway.app/createTodo',{
                         title,
                         description
                     },{

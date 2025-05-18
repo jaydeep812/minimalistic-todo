@@ -39,7 +39,7 @@ export default function Signup(){
                 </div>
                 <div className="flex flex-row items-center space-x-6">
                     <button onClick={async()=>{
-                        const response = await axios.post('http://localhost:3000/signup',{
+                        const response = await axios.post('https://minimalistic-todo-production.up.railway.app/signup',{
                             username,
                             password,
                             firstName,
