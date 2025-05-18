@@ -25,7 +25,7 @@ export default function Signin(){
                     </div> 
                     <div className="flex flex-row items-center space-x-6">
                         <button onClick={async()=>{
-                            const response = await axios.post('https://minimalistic-todo-production.up.railway.app//signin',{
+                            const response = await axios.post('https://minimalistic-todo-production.up.railway.app/signin',{
                                 username,
                                 password
                             },{
